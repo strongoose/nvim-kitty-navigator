@@ -1,0 +1,1 @@
+# nvim-kitty-navigator
