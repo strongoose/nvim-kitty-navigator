@@ -8,7 +8,8 @@ This [kitten](https://sw.kovidgoyal.net/kitty/kittens/custom/) is inspired by
 
 Unlike its inspirations, nvim-kitty-navigator doesn't require a Neovim plugin.
 Instead, [pynvim](https://github.com/neovim/pynvim) is used to control Neovim
-programatically.
+programatically. As a result, enabling remote control for kitty is not
+required!
 
 ## Installation
 
