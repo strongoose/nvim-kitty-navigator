@@ -40,8 +40,8 @@ map ctrl+l kitten navigate.py right
 
 The kitten makes a couple of assumptions about your neovim setup:
 
-0. It expects Neovim to create a default RPC socket in its runpath at startup, as described in [the API docs](https://neovim.io/doc/user/api.html#rpc-connecting). Using `--listen` will likely break the kitten!
-0. It expects the socket to have a predictable name in the format `nvim.<pid>.<n>`
-0. It expects the standard runpath not to change from one vim instance to another, or over the life of a Kitty process. The path is discovered by running `:echo stdpath('run')` on a headless Neovim instance, then cached until Kitty exits.
+1. It expects Neovim to create a default RPC socket in its runpath at startup, as described in [the API docs](https://neovim.io/doc/user/api.html#rpc-connecting). Using `--listen` will likely break the kitten!
+1. It expects the socket to have a predictable name in the format `nvim.<pid>.<n>`
+1. It expects the standard runpath not to change from one vim instance to another, or over the life of a Kitty process. The path is discovered by running `:echo stdpath('run')` on a headless Neovim instance, then cached until Kitty exits.
 
 If any of these assumptions cause you issues, feel free to raise an issue!
